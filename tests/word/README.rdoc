@@ -1,0 +1,20 @@
+- Test a word is a Palindrome
+- Spells the same forwards as backwards
+- Example: Madam, Level, Deed, etc.
+- Not a Palindrome: Food, Energy, etc.
+
+Step 1 - Devise how you would test this?
+
+Two contexts here:
+1) The word is a Palindrome
+- it should read the same forwards as backwards
+
+2) The word is NOT a Palindrome
+- it should NOT read the same forwards as backwards
+
+- change the case to lower case so we can do an accurate comparison
+- find the number of characters in the word
+- determine the mid-point, depending on whether the lenght is an even or odd number
+- split the word into two substrings, the head and the tail
+- reverse the tail (or the head)
+- compare the two halves
