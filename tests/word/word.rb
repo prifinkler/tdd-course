@@ -2,7 +2,6 @@ class Word
   def self.palindrome?(test_word)
     test_word = test_word.downcase
     word_length = test_word.length
-    test_word.reverse == test_word
     mid = word_length / 2
 
     mid_length = word_length % 2 == 0 ? mid : mid + 1
