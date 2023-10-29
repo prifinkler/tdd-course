@@ -3,3 +3,7 @@ STRINGS!
 - ability to work with and manipulate strings imperative
 - usually surrounded by " - double quotes or ' - single quotes
 - basic different is " - double quotes allow string interpolation
+
+What is %q and %Q?
+- %q can replace single quotes.
+- %Q can replace double quotes.
