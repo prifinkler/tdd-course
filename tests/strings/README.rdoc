@@ -1,0 +1,5 @@
+STRINGS!
+- widespread use in programming
+- ability to work with and manipulate strings imperative
+- usually surrounded by " - double quotes or ' - single quotes
+- basic different is " - double quotes allow string interpolation
