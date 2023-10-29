@@ -1,0 +1,27 @@
+Collections! Hash/Array etc...
+
+- Collections are data structures that allows us to have a number of objects grouped in them.
+Example: Products, you could have a collection of products as objects in a hash.
+Each product can have an id, number, name and other attributes.
+
+We will work with a Product class now and Product will have the following attributes:
+id
+name
+quantity
+price
+
+- We return an array of all the products we are creating.
+- We do this buy defining a class method 'all' e.g. Product.all
+
+Array of all products:
+- array
+- class variable: @@products
+- add product objects to this @@products class array as they are built in the constructor
+
+Names of all the products from the list of products - Get this list
+
+Ability to filter our data:
+- We can replenish our stock when we run out of stock
+- We get to know the items that have sold out
+
+Return the total value of the inventory
