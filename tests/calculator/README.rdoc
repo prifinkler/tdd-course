@@ -1,0 +1,5 @@
+Arithmetic in Ruby!
+- Let's do some math in the console.
+- How would we design a rspec for this?
+- Give it some contexts and tests based results from methods
+- Get started building!
