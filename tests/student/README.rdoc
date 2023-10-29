@@ -11,3 +11,6 @@ Let's talk about Student class
 So any student object should thus respond to first name, last name and full name.
 
 Let's take a look at this through specs.
+
+Introduction - describe:
+subject = the object that's being described (e.g. student)
