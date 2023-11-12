@@ -108,3 +108,16 @@ Hand Values
 - All face cards have value of 10 (Queen, King, Jack)
 - All number cards have their value in their rank
 - Ace has value of 1 or 11, based on the situation
+
+BLACKJACK:
+blackjack.rb
+ - player_hand
+ - dealer_hand
+ - playing: whether the me is on or not
+ - current_gamer
+ - deck: handle of the cards
+ - deal: to deal the cards to the player or the dealer
+ - hit: player has option to take a card - hitting
+ - stand: player has the option to close out their hand - stand
+ - show_hands: to report the hands of the player and the dealer
+ - set_results: to set the results of the game

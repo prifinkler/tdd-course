@@ -26,14 +26,38 @@ class Hand
 
   def get_value
     # put rank of cards and put them in an array
-    card_ranks = []
-    dealt_cards.each { |card| card_ranks.push(card.rank)}
+    # card_ranks = []
+    # dealt_cards.each { |card| card_ranks.push(card.rank)}
 
-    value = 0
-    card_ranks.each do |rank|
-      rank = rank.to_sym #convert string to symbol
-      value = value + VALUES[rank] #we will have a values hash
+    # card_ranks = dealt_cards.map { |card| card.rank }
+    card_ranks = dealt_cards.collect { |card| card.rank } # map and collect are interchangeable and can be used here to loop through and push values
+
+    # value = 0
+    # card_ranks.each do |rank|
+    #   rank = rank.to_sym #convert string to symbol
+    #   value = value + VALUES[rank] #we will have a values hash
+    # end
+    #reduce, ace - 0, next iteration sets acc to result of first iteration and does the calc
+    value = card_ranks.reduce(0) { |acc, rank| acc + VALUES[rank.to_sym] }
+
+    #Ace can have value of 11 provided the total hand value is less than 21
+    if card_ranks.include?('Ace')
+      value += 10 if value + 10 <= 21
     end
     value
+  end
+
+  def to_s
+    #start with empty string
+    report = ""
+
+    dealt_cards.each { |card| report += card.to_s + ", " if card.show }
+
+    if dealt_cards.first.show == false
+      first_value = VALUES[dealt_cards.first.rank.to_sym]
+      report + "Total value: " + (get_value - first_value).to_s
+    else
+      report + "Total value: " + get_value.to_s
+    end
   end
 end
