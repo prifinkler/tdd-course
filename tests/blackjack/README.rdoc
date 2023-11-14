@@ -121,3 +121,7 @@ blackjack.rb
  - stand: player has the option to close out their hand - stand
  - show_hands: to report the hands of the player and the dealer
  - set_results: to set the results of the game
+
+Hit
+- Player's turn
+- Player already has two cards, and chooses to receive another card (or more)
