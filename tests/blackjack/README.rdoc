@@ -125,3 +125,7 @@ blackjack.rb
 Hit
 - Player's turn
 - Player already has two cards, and chooses to receive another card (or more)
+
+Stand (it means they don't want any more cards)
+- When player 'stands' -> It's the dealer's turn to play
+- Player takes no more cards (if they stand at the beginning, dealer's card is face up )
