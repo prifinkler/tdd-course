@@ -66,15 +66,27 @@ class Blackjack
   end
 
   def set_results
-
+    if player_hand.get_value > 21
+      @result = "Player busted!"
+    elsif dealer_hand.get_value > 21
+      @result = "Dealer busted!"
+    elsif current_gamer == "Dealer"
+      if player_hand.get_value == dealer_hand.get_value
+        @result = "It's a tie!"
+      elsif player_hand.get_value > dealer_hand.get_value
+        @result = "Player won!"
+      elsif player_hand.get_value < dealer_hand.get_value
+        @result = "Player lost!"
+      end
+    end
   end
 
-  def to_s
-    puts "Player hand is: #{player_hand.get_value}"
-    puts "Player has: #{player_hand.dealt_cards.count}"
-    puts "Dealer hand is: #{dealer_hand.get_value}"
-    puts "Dealer has: #{dealer_hand.dealt_cards.count}"
-  end
+  # def to_s
+  #   puts "Player hand is: #{player_hand.get_value}"
+  #   puts "Player has: #{player_hand.dealt_cards.count}"
+  #   puts "Dealer hand is: #{dealer_hand.get_value}"
+  #   puts "Dealer has: #{dealer_hand.dealt_cards.count}"
+  # end
 
   private
 
