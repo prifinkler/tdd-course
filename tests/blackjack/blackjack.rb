@@ -62,7 +62,7 @@ class Blackjack
   end
 
   def show_hands
-
+    "Player's hand: #{player_hand}\nDealer's hand: #{dealer_hand}"
   end
 
   def set_results
