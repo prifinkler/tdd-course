@@ -129,3 +129,9 @@ Hit
 Stand (it means they don't want any more cards)
 - When player 'stands' -> It's the dealer's turn to play
 - Player takes no more cards (if they stand at the beginning, dealer's card is face up )
+
+Assignment:
+
+Issue: When dealer's first card (face down) is Ace, the value displaying is incorrect, it's showing 10 more than it should.
+- Write an example to find the issue, an additional one in the hand_spec.rb file.
+- Fix the to_s method to account for this so the correct output displays.
